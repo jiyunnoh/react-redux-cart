@@ -1,7 +1,7 @@
 import React from 'react';
 import classes from './CartItem.module.css';
 
-type CartItemProp = {
+export type CartItemProp = {
   item: { title: string; quantity: number; total: number; price: number; }
 }
 
