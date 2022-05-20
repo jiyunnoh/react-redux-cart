@@ -4,12 +4,12 @@ import Cart from './components/Cart/Cart';
 import Layout from './components/Layout/Layout';
 import Products from './components/Shop/Products';
 
-type cartReducerType = {
+type showCartReducerType = {
   ui: { cartIsVisible: boolean }
 }
 
 function App() {
-  const showCart = useSelector((state: cartReducerType) => state.ui.cartIsVisible);
+  const showCart = useSelector((state: showCartReducerType) => state.ui.cartIsVisible);
 
   return (
     <Layout>
